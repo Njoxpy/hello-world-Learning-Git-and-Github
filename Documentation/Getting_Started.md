@@ -107,5 +107,3 @@ git help
 ```
 
 - Another way is by using google or any favourite browser of your own, head into google then search any command used by git for vesrion controlling.
-
-## Exercise

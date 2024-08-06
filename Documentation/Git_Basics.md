@@ -24,15 +24,16 @@ git init
 code .
 ```
 
-- So we have followed a couple of steps for git to keep `t`rack of all` activities which` are `happening into a repo f``irst we have to create a folder` and inside a folder we have to include  files concerning about that folder, Example: Incase you` are learning web development and you want to build a project using html , CSS  and JavaScript so the folder structure will be like this you` have a folder called `Project name(todo list)` and also i`nside the folder you` have a source folder which contains the list of all files concerning you files and what is impor`tant here `is git to keep track of allactivties so inorder for git to keep track yuo have to initialize a re`pository using this command.
+- So we have followed a couple of steps for git to keep track of all activities which are happening into a repo first we have to create a folder and inside a folder we have to include files concerning about that folder, Example: Incase you are learning web development and you want to build a project using html , CSS and JavaScript so the folder structure will be like this you have a folder called Project name(todo list) and also inside the folder you have a source folder which contains the list of all files concerning you files and what is important here is git to keep track of allactivties so inorder for git to keep track yuo have to initialize a repository using this command.
 
 ```sh
+# initialize git project
 git init
 ```
 
 ## Git Workflow
 
-- 
+-
 
 ## Staging Changes
 
@@ -41,23 +42,23 @@ git init
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning Git and Github</title>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <h1>Learning Git</h1>
+      <h1>Learning Git</h1>
     </div>
-</body>
+  </body>
 </html>
 ```
 
 - So after we have modified index.html file the git will tell us that there are some modifications into a file called `index.html` and if you are using VS Code you will see into the source control button showing `M` showing which means modified.So inorder to see the status all files into your project we have to use `git status` command to see the status of your files for your project.
 
 ```sh
-git status 
+git status
 # On branch master
 
 # No commits yet
@@ -92,7 +93,7 @@ git add .
 git add *.html
 ```
 
-- but you have to be carefull wehn using `git add .` since sometimes you have large files and folders which you don't want to be tracked such as dist folders, .env file.Since I have html files`, CSS files and JavasCri`pt files I want to all at once then I will use `git add .` command to add all files at once.
+- but you have to be carefull wehn using `git add .` since sometimes you have large files and folders which you don't want to be tracked such as dist folders, .env file.Since I have html files, CSS files and JavaScript files I want to all at once then I will use `git add .` command to add all files at once.
 
 ```sh
 git add .
@@ -125,7 +126,7 @@ git commit -m "commit message description"
 git commit -m "Initial commit"
 ```
 
-- Since into my project I have set initial files for CSS, HTML and JavaScript so what to do here is including  a description about what I have done into my project,and you can use any description which desribes what you have done.There are times when you wanto to specify what changes you have meade and a commit message is to long so todo that we have to use  `git commit` command a terminal will open default editor asking to enter a commit message and description.
+- Since into my project I have set initial files for CSS, HTML and JavaScript so what to do here is including a description about what I have done into my project,and you can use any description which desribes what you have done.There are times when you wanto to specify what changes you have meade and a commit message is to long so todo that we have to use `git commit` command a terminal will open default editor asking to enter a commit message and description.
 
 ```sh
 git commit
@@ -162,5 +163,5 @@ rm styles.css
 
 ```sh
 git status -s
- D styles.css
+#  D styles.css
 ```
