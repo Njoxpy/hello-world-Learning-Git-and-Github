@@ -1,0 +1,105 @@
+site_name: Learning Git and GitHub
+site_description: A comprehensive guide to learning Git and GitHub fundamentals
+site_author: Njoxpy
+site_url: https://njoxpy.github.io/hello-world-Learning-Git-and-Github
+
+# Repository
+repo_name: Njoxpy/hello-world-Learning-Git-and-Github
+repo_url: https://github.com/Njoxpy/hello-world-Learning-Git-and-Github
+
+# Configuration
+theme:
+  name: material
+  language: en
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+
+# Plugins
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+# Navigation
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Introduction: getting-started/introduction.md
+    - Installation: getting-started/installation.md
+    - Configuration: getting-started/configuration.md
+  - Git Basics:
+    - Overview: git-basics/overview.md
+    - Repository Initialization: git-basics/initialization.md
+    - Staging Changes: git-basics/staging.md
+    - Committing Changes: git-basics/committing.md
+    - Working with Files: git-basics/files.md
+  - GitHub Guide:
+    - Overview: github/overview.md
+    - Getting Started with GitHub: github/getting-started.md
+    - Remote Repositories: github/remote-repos.md
+  - Branching & Workflows:
+    - Branching Basics: branching/basics.md
+    - Workflows: branching/workflows.md
+    - Handling Conflicts: branching/conflicts.md
+  - Advanced Topics:
+    - Advanced Git Features: advanced/features.md
+    - Best Practices: advanced/best-practices.md
+    - Troubleshooting: advanced/troubleshooting.md
+  - Resources:
+    - Additional Resources: resources/additional.md
+    - External Links: resources/external.md
+  - Exercises:
+    - Practice Questions: exercises/questions.md
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Njoxpy
+  version:
+    provider: mike
